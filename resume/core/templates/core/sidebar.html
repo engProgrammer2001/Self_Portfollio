@@ -1,0 +1,36 @@
+{% comment %} {% extends 'core/base.html' %} {% endcomment %}
+
+<style>
+    #ashok{
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 3px 18px;
+        font-family: 'Satisfy', cursive;
+    }
+    #ashok:hover{
+        color: black;
+        background-color: gold;
+        padding: 3px 18px;
+        font-weight: bold;
+    }
+    #ashok.active{
+        color: black;
+        background-color: #ff9523;
+        font-weight: bold;
+    }
+</style>
+{% load static%}
+<div class="border-end border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'core/images/aa.jpg' %}" alt="Profilepick" class="img-fluid rounded-circle mt-5"
+            width="150px" height="150px">
+        <h5 class="text-white mt-4 st-font">Ashok Kumar Kushwaha</h5>
+    </div>
+    <hr class="border-bottom border-3">
+    <nav class="nav flex-column text-center mt-4">
+        <a href="{% url 'home' %}" class="navlink mt-4 {{home}} " id="ashok">Home</a>
+        <a href="{% url 'services' %}" class="navlink mt-4 {{services}}" id="ashok">Services</a>
+        <a href="{% url 'skill' %}" class="navlink mt-4 {{skill}}" id="ashok">Skill</a>
+        <a href="{% url 'contact' %}" class="navlink mt-4 {{contact}}" id="ashok">Contact</a>
+    </nav>
+</div>

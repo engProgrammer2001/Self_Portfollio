@@ -1,0 +1,22 @@
+/* font style here */
+.st-font{
+    font-family: 'Satisfy', cursive;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container-fluid{
+    min-height: 100%;
+}
+
+/* Service Icon part CSS */
+.i-color{
+    color: gold;
+}
+/* Service subtitle color CSS */
+.ss-color{
+    color: silver;
+}
+

@@ -1,0 +1,88 @@
+{% extends 'core/base.html' %}
+
+
+{% block content %}
+
+{% comment %} This is the stayle part of contact page {% endcomment %}
+<style>
+    .row span{
+        color:red;
+    }
+    input{
+        border:0;
+        outline:none;
+        list-style:none;
+    }
+</style>
+
+<div class="container">
+    <h1 class="text-warning mt-5 mb-5 border-bottom border-3">CONTACT US</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquam voluptate
+            cupiditate? Magnam officia iusto minus deserunt libero dignissimos quas consequuntur necessitatibus. Enim
+            nostrum aspernatur minima provident consectetur itaque distinctio.</p>
+        <div class="col-sm-10 mb-5 mt-5">
+            <form action="">
+                <div class="row">
+                    <div class=" form-group col-md-5 mb-5">
+                        <label for="fname" class="form-label">First Name<span>*</span></label>
+                        <input type="text" class="form-control" id="fname" aria-describedby="fname"
+                            placeholder="Enter first name">
+                    </div>
+                    <div class=" form-group col-md-5 mb-5 offset-sm-1">
+                        <label for="lname" class="form-label">Last Name<span>*</span></label>
+                        <input type="text" class="form-control" id="lname" aria-describedby="lname"
+                            placeholder="Enter last Name">
+                    </div>
+                    <div class=" form-group col-sm-5 mb-5">
+                        <label for="exampleInputEmail1" class="form-label">Email address<span>*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Example@gmail.com">
+                    </div>
+                    <div class=" form-group col-md-5 mb-5 offset-sm-1">
+                        <label for="number" class="form-label">Phone Number<span>*</span></label>
+                        <input type="number" class="form-control" id="lname" aria-describedby="lname"
+                            placeholder="9000000000">
+                    </div>
+                </div>
+                <div class="col-sm-11 mb-2 mb-5">
+                    <div>
+                        <label for="subject" class="form-label">Subject<span>*</span></label>
+                        <input type="text" class="form-control" name="subject" id="subject"
+                            placeholder="Enter Your Subject">
+                    </div>
+                </div>
+                <div class="col-sm-11 mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Share Doubt<span>*</span></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Enter Your Contents"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-2 mt-5">
+            <ul class="list-unstyled text-center">
+                <li>
+                    <i class="fa-solid fa-location-dot fa-2x mt-4 i-color"></i>
+                    <p class="st-font">Jabalpur, Shahdol, Rewa</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone-volume fa-2x mt-4 i-color"></i>
+                    <p class="st-font">+91 8103334932</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope fa-2x mt-4 i-color"></i>
+                    <p class="st-font">askushwaha613@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-center mb-5">
+            <a href="#" target="_blank"> <i class="fa-brands fa-twitter fa-2x m-3 "></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100077835050935" target="_blank"> <i class="fa-brands fa-facebook fa-2x m-3"></i></a>
+            <a href="https://www.instagram.com/ashokkushwaha352/" target="_blank"> <i class="fa-brands fa-square-instagram fa-2x m-3" style="background: linear-gradient(55deg,#7a3d3d,#ee2f38); color:rgb(235, 179, 179);"></i></a>
+            <a href="https://www.linkedin.com/in/ashok-kumar-kushwaha-1305b5224/" target="_blank"> <i class="fa-brands fa-linkedin fa-2x m-3"></i></a>
+            <a href="https://www.youtube.com/channel/UCkBF2dsG-oWAhByYcnypTiA" target="_blank"> <i class="fa-brands fa-youtube fa-2x m-3" style="color:red;"></i></a>
+            </div>
+
+{% endblock content %}

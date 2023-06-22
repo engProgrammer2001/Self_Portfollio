@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+{% block content %}
+<div class="pt-5 text-white">
+    <div class="text-center">
+        <img src="{% static 'core/images/aa.jpg' %}" alt="Profilepick" class="img-thumbnail" width="300px"
+            height="300px">
+    </div>
+    <div class=" mt-5 mx-5 text-white text-justify ">
+        <h1 class="fw-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem">
+            <p style="text-indent: 130px;">I am <span class="text-warning fw-bold st-font ">Ashok kumar kushwaha</span> and I study in Batchlor's of Technology with Compluter Science specialization and Currently I'm Looking for fresher Job Employee for any IT reputed company as a role of Web-Developer,
+            <p> aspernatur id eaque aliquid natus? Eveniet optio laudantium quisquam praesentium quidem nisi
+                quae,explicabo totam. Reprehenderit voluptas alias dolor minima tempora, consequuntur architecto ad
+                quibusdamvoluptatibus quos placeat non nobis laudantium hic cumque dolorem atque distinctio vitae
+                accusamus
+            </p>
+            <p>voluptate, nemo inventore ex, voluptatem perspiciatis. Aperiam quos commodi consequatur ad ducimus
+                tenetur nam </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'services' %}" class="btn btn-outline-warning my-3" style="margin-right:50px;">Hire me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{% endblock content %}

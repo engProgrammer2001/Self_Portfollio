@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_Page</title>
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8712fb5911.js" crossorigin="anonymous"></script>
+    {% block corecss %}
+        <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+    {% endblock corecss %}
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-sm-2">
+                {% comment %} this include profile code  {% endcomment %}
+                {% include 'core/sidebar.html' %}
+            </div>
+               
+
+            <div class="col-sm-10">
+                {% block content %}
+
+                {% endblock content %}
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="{% static 'core/JavaScript/jquery.js' %}"></script>
+    <script src="{% static 'core/JavaScript/popper.js' %}"></script>
+    <script src="{% static 'core/JavaScript/boosttrap.js' %}"></script>
+    <script src="{% static 'core/JavaScript/all.min.js' %}"></script>
+</body>
+</html>
